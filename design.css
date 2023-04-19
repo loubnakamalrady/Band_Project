@@ -1,0 +1,235 @@
+body{
+    background-image: url("pngtree.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    background-color: rgb(90, 65, 97);
+    border-color: rgb(132, 116, 137);
+}
+
+.nav_button{
+    display: none;
+}
+
+nav img{
+    width: 15%;
+}
+
+.nav_bar{
+    background-color: black;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+nav .socialmediaicons{
+    display: flex;
+    color: white;
+    font-size: 25px;
+}
+nav .socialmediaicons i{
+    margin: 3px;
+}
+
+.responsive_button{
+    display: flex;
+    list-style: none;
+}
+
+nav .middle_buttons a{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: x-large;
+    margin: 10px
+}
+
+.mercury-album , .night-visions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(123, 127, 123 , 0.7);
+    height: 450px;
+    margin-bottom: 100px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.mercury-album img{
+    width: 100%;
+}
+
+.album-description , .event-description{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.album-description button , .event-description button{
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.night-visions .adjust-pwidth{
+    width: 40%;
+}
+
+.night-visions img{
+    width: 92%;
+}
+
+.nv-poster img{
+    width: 100%;
+    height: 600px;
+}
+
+.nightv-teaser{
+    display: flex;
+    justify-content: center;
+}
+
+.nv-poster , .nv-teaser{
+    margin: 0;
+    padding: 10px;
+}
+
+.nv-teaser iframe{
+    width: 690px;
+    height: 600px;
+}
+
+main{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+button:hover{
+    background-color: rgba(132, 116, 137, 0.8);
+    transition: 0.5s;
+}
+
+.socialmediaicons span i:hover{
+    font-size: xx-large;
+    transition: 0.5s;
+}
+
+ul li a:hover{
+    font-size: xx-large;
+    color: rgba(132, 116, 137, 0.8);;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1100px) {
+    .nav_bar{
+        padding: 0 30px;
+        height: 70px;
+        overflow: hidden; 
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    .responsive_button{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .nav_button{
+        display: block;
+        color: white;
+        cursor: pointer;
+
+    }
+
+    .middle_buttons{
+        position: relative;
+        top: 120px;
+        left: 300px;
+        width: 100%;
+        opacity: 0;
+        
+    }
+    nav img{
+        width: 25%;
+    }
+
+    main{
+        margin-top: 150px;
+    }
+
+    .mercury-album{
+        flex-direction: column;
+        height: 900px;
+    }
+    .album-description{
+        height: 10%;
+        margin-bottom: 300px;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .night-visions{
+        height: 600px;
+        font-size: smaller;
+    }
+
+    .nv-poster img{
+        width: 50%;
+        height: 80%;
+        margin-bottom: 25px;
+    }
+
+    .nv-teaser iframe{
+        width: 100%;
+        height: 90%;
+        margin-right: 170px;
+    }
+
+    .nightv-teaser{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+    }
+
+    .nv-poster , .nv-teaser{
+        display: flex;
+    }
+
+
+    .middle_buttons.active{
+        opacity: 1;
+    }
+
+    .nav_button.active{
+        opacity: 1;
+    }
+
+}
+
+
+
+
+
+
+
+
