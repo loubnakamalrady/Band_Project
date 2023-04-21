@@ -51,69 +51,6 @@ nav .middle_buttons a{
     margin: 10px
 }
 
-.mercury-album , .night-visions{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(123, 127, 123 , 0.7);
-    height: 450px;
-    margin-bottom: 100px;
-    font-family: 'Oswald', sans-serif;
-}
-
-.mercury-album img{
-    width: 100%;
-}
-
-.album-description , .event-description{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.album-description button , .event-description button{
-    width: 25%;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-.night-visions .adjust-pwidth{
-    width: 40%;
-}
-
-.night-visions img{
-    width: 92%;
-}
-
-.nv-poster img{
-    width: 100%;
-    height: 600px;
-}
-
-.nightv-teaser{
-    display: flex;
-    justify-content: center;
-}
-
-.nv-poster , .nv-teaser{
-    margin: 0;
-    padding: 10px;
-}
-
-.nv-teaser iframe{
-    width: 690px;
-    height: 600px;
-}
-
-main{
-    padding-bottom: 60px;
-    padding-top: 60px;
-}
-
 button:hover{
     background-color: rgba(132, 116, 137, 0.8);
     transition: 0.5s;
@@ -129,6 +66,7 @@ ul li a:hover{
     color: rgba(132, 116, 137, 0.8);;
     transition: 0.5s;
 }
+
 
 @media only screen and (max-width: 1100px) {
     .nav_bar{
@@ -170,50 +108,6 @@ ul li a:hover{
         width: 25%;
     }
 
-    main{
-        margin-top: 150px;
-    }
-
-    .mercury-album{
-        flex-direction: column;
-        height: 900px;
-    }
-    .album-description{
-        height: 10%;
-        margin-bottom: 300px;
-        margin-top: 0;
-        padding: 0;
-    }
-
-    .night-visions{
-        height: 600px;
-        font-size: smaller;
-    }
-
-    .nv-poster img{
-        width: 50%;
-        height: 80%;
-        margin-bottom: 25px;
-    }
-
-    .nv-teaser iframe{
-        width: 100%;
-        height: 90%;
-        margin-right: 170px;
-    }
-
-    .nightv-teaser{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 800px;
-    }
-
-    .nv-poster , .nv-teaser{
-        display: flex;
-    }
-
 }
 
 @media only screen and (max-width: 1100px) {
@@ -225,8 +119,45 @@ ul li a:hover{
 }
 
 
+.tour-container{
+    width: 100%;
+    display: grid;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
 
+.tour1{
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 30px;
+}
 
+.tour1 button{
+    padding: 10px;
+    border-radius: 10px;
+}
 
+@media only screen and (max-width:1100px){
+    .tour-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    .tour1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
 
+    .tour1 span{
+        margin-bottom: 15px;
+    }
+
+}

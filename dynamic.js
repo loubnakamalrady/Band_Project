@@ -1,8 +1,31 @@
-navbutton = document.querySelector(".nav_button");
+function MyFunction(){
+    var x = document.getElementById('midbuttons');
+    if(x.className === "middle_buttons"){
+        x.className += "responsive";
+    }
+    else{
+        x.className = "middle_buttons";
+    }
+}
 
-navbutton.onclick = function MyFunction() {
-    thelist = document.querySelector(".middle_buttons");
-    navBar = document.querySelector(thelist);
-    navBar.classList.toggle("active");
 
+let scroll = document.querySelector(".merches");
+let nextbtn = document.getElementById("nxtbtn");
+let backbtn = document.getElementById("bckbtn");
+
+function Scroll(){
+
+
+    scroll.addEventListener("wheel" , (e) => {
+        e.preventDefault();
+        scroll.scrollLeft += e.deltaY;
+    });
+
+    nextbtn.addEventListener("click", ()=>{
+        scroll.scrollLeft += 1000;
+    });
+
+    backbtn.addEventListener("click", ()=>{
+        scroll.scrollLeft -= 1000;
+    })
 }
