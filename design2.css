@@ -1,8 +1,15 @@
+/* The * selector sets the margin and padding
+ to 0 for all elements. */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* The .wrapping class sets the width to 100%, 
+displays it as a flex container, and aligns and 
+justifies the content to the center. It sets the 
+margin to 15% from the top and auto from the left 
+and right. */
 .wrapping{
     width: 100%;
     display: flex;
@@ -11,12 +18,19 @@
     margin: 15% auto;
 }
 
+/* The .merches class sets the width to 1400px, 
+displays it as a flex container, and allows 
+horizontal scrolling. */
 .merches{
     width: 1400px;
     display: flex;
     overflow-x: scroll;
 }
 
+/* The .merch-images class sets the width to 100%,
+ displays it as a grid with nine columns of equal 
+ width, sets the gap between the grid items to 10px, 
+ adds padding, and sets the flex property to none. */
 .merch-images{
     width: 100%;
     display: grid;
@@ -26,22 +40,35 @@
     flex: none;
 }
 
+/* The .merch-images img class sets the width of the
+ images to 300px, applies the grayscale filter with 
+ 100% intensity, and sets a transition effect with a 
+ duration of 3s when the mouse hovers over the image. */
 .merch-images img{
     width: 300px;
     filter: grayscale(100%);
     transition: 3s;
 }
 
+/* The .merch-images img:hover class removes the 
+grayscale filter, sets the transition effect with a 
+duration of 5s, and increases the width of the image 
+to 500px when the mouse hovers over the image. */
 .merch-images img:hover{
     filter: grayscale(0);
     transition: 5s;
     width: 500px;
 }
 
+/* The .merches::-webkit-scrollbar selector hides
+ the scrollbar in the merchandise container. */
 .merches::-webkit-scrollbar{
     display: none;
 }
 
+/* The #nxtbtn and #bckbtn selectors set the width to
+ 50px and the cursor to pointer for the next and back
+  buttons used for scrolling the merchandise section. */
 #nxtbtn , #bckbtn{
     width: 50px;
     cursor: pointer;

@@ -1,3 +1,4 @@
+/* The body element sets a background image and adjusts the padding and margin to 0. */
 body{
     background-image: url("pngtree.png");
     background-repeat: no-repeat;
@@ -6,19 +7,25 @@ body{
     margin: 0;
 }
 
+/* The button element sets the background color and border color. */
 button{
     background-color: rgb(90, 65, 97);
     border-color: rgb(132, 116, 137);
 }
 
+/* The .nav_button class hides an element on the navigation bar. */
 .nav_button{
     display: none;
 }
 
+/* adjusting image width */
 nav img{
     width: 15%;
 }
 
+
+/* The nav element sets the font size and color of the social 
+media icons and navigation bar's middle buttons. */
 .nav_bar{
     background-color: black;
     position: sticky;
@@ -37,11 +44,6 @@ nav .socialmediaicons i{
     margin: 3px;
 }
 
-.responsive_button{
-    display: flex;
-    list-style: none;
-}
-
 nav .middle_buttons a{
     color: white;
     font-family: 'Oswald', sans-serif;
@@ -51,22 +53,38 @@ nav .middle_buttons a{
     margin: 10px
 }
 
+/* The .responsive_button class sets 
+the list style to none and the display to flex. */
+.responsive_button{
+    display: flex;
+    list-style: none;
+}
+
+/* The button:hover set the hover effects for buttons */
+/* when you hover the background color changes in 0.5 seconds */
 button:hover{
     background-color: rgba(132, 116, 137, 0.8);
     transition: 0.5s;
 }
 
+/* .socialmediaicons span i:hover set the hover effects for
+the icons where it adjusts the fontsize of the icons on 0.5 seconds*/
 .socialmediaicons span i:hover{
     font-size: xx-large;
     transition: 0.5s;
 }
 
+/* ul li a:hover class set the hover effects for anchor tags
+where it adjusts the fontsize of it, color ,when you hover it changes in 0.5 second*/
 ul li a:hover{
     font-size: xx-large;
     color: rgba(132, 116, 137, 0.8);;
     transition: 0.5s;
 }
 
+/* The @media rule adjusts the layout for screens with a maximum width of 1100px.
+ It modifies the navigation bar's height, adds a responsive button for small screens,
+  adjusts the size and position of various elements, and changes the font size of the night visions section.  */
 
 @media only screen and (max-width: 1100px) {
     .nav_bar{
@@ -111,6 +129,7 @@ ul li a:hover{
 }
 
 @media only screen and (max-width: 1100px) {
+    /* The .middle_buttons.responsive class sets the opacity to 1 on small screens. */
     .middle_buttons.responsive{
         opacity: 1;
 
@@ -118,7 +137,9 @@ ul li a:hover{
 
 }
 
-
+/* The .tour-container class sets the width to 100%, displays it as a grid,
+ and sets the gap between the grid items to 50px. It aligns and justifies the 
+ content to the center and adds padding. */
 .tour-container{
     width: 100%;
     display: grid;
@@ -128,6 +149,9 @@ ul li a:hover{
     padding: 10px;
 }
 
+/* The .tour1 class sets the width to 100%, sets the background color to white, 
+and displays it as a grid with four columns of equal width. 
+It adds padding to the grid items. */
 .tour1{
     width: 100%;
     background-color: white;
@@ -136,11 +160,18 @@ ul li a:hover{
     padding: 30px;
 }
 
+/* The .tour1 button class sets the padding and border-radius 
+for the buttons inside the tour1 grid. */
 .tour1 button{
     padding: 10px;
     border-radius: 10px;
 }
 
+/* The @media rule adjusts the layout for screens 
+with a maximum width of 1100px. It modifies the tour 
+container and tour1 grid, changes the flex-direction 
+to column, and adjusts the width and margin for the 
+tour1 span element. */
 @media only screen and (max-width:1100px){
     .tour-container{
         display: flex;
